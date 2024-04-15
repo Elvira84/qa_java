@@ -21,9 +21,9 @@ public class FelineTest {
 
     @Test
     public void felineGetFamilyTest() {
+        Feline feline = new Feline();
         String expected = "Кошачьи";
         String actual = feline.getFamily();
-        Mockito.verify(feline).getFamily();
         assertEquals("Семейство - не кошачьи", expected, actual);
     }
 
@@ -35,6 +35,7 @@ public class FelineTest {
 
     @Test
     public void felineGetKittensTestWithParameters() {
+        Feline feline = new Feline();
         int kittensCount = 4;
         int actual = feline.getKittens(kittensCount);
         assertEquals("Неверное количество котят", kittensCount, actual);

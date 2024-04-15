@@ -12,7 +12,6 @@ import org.mockito.Mockito;
 public class LionParameterizedTest {
 
     private Feline feline;
-    private Lion lion;
     private String sex;
     private boolean hasMane;
 
@@ -39,5 +38,4 @@ public class LionParameterizedTest {
         Lion lion = new Lion(sex, feline);
         Assert.assertEquals(hasMane, lion.doesHaveMane());
     }
-
 }
